@@ -12,8 +12,10 @@ knit        : slidify::knit2slides
 ---
 
 # Rentrez
-### Getting NCBI data into your R sesssions
+### Getting NCBI data into your R sessions
+
 David Winter (@theatavism), Arizona State University
+
 
 --- 
 
