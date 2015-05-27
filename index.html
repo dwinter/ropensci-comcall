@@ -91,11 +91,9 @@
 
 <pre><code class="r">load_all(&quot;~/src/rentrez&quot;)
 all_dbs &lt;- entrez_dbs()[-47] #there&#39;s always one...
+how_many_recs &lt;- function(db)  as.integer(entrez_db_summary(db)[&quot;Count&quot;]) 
 nrecs &lt;- sapply(all_dbs, how_many_recs)
-dotchart(nrecs)
 </code></pre>
-
-<p><img src="assets/fig/bigrecs-1.png" alt="plot of chunk bigrecs"> </p>
 
   </article>
   <!-- Presenter Notes -->
@@ -103,10 +101,14 @@ dotchart(nrecs)
 
 <slide class="" id="slide-5" style="background:;">
   <hgroup>
-    <h2>The NCBI and entrez</h2>
+    <h2>The NCBI</h2>
   </hgroup>
   <article data-timings="">
-    
+    <pre><code class="r">dotchart(nrecs)
+</code></pre>
+
+<p><img src="assets/fig/dotchart-1.png" alt="plot of chunk dotchart"> </p>
+
   </article>
   <!-- Presenter Notes -->
 </slide>
@@ -141,7 +143,7 @@ dotchart(nrecs)
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=5 title='The NCBI and entrez'>
+        data-slide=5 title='The NCBI'>
          5
       </a>
     </li>

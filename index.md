@@ -48,14 +48,19 @@ The NCBI has a lot of data... like a _lot_
 ```r
 load_all("~/src/rentrez")
 all_dbs <- entrez_dbs()[-47] #there's always one...
+how_many_recs <- function(db)  as.integer(entrez_db_summary(db)["Count"]) 
 nrecs <- sapply(all_dbs, how_many_recs)
-dotchart(nrecs)
 ```
-
-![plot of chunk bigrecs](assets/fig/bigrecs-1.png) 
 
 ---
 
-## The NCBI and entrez
+## The NCBI 
+
+
+```r
+dotchart(nrecs)
+```
+
+![plot of chunk dotchart](assets/fig/dotchart-1.png) 
 
 
