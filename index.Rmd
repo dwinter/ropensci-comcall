@@ -3,7 +3,7 @@ title       : Rentrez
 subtitle    : getting NCBI data in an R session
 author      : David Winter 
 job         : Postdoc, Arizona State University
-framework   : impressjs       # {io2012, html5slides, shower, dzslides, ...}
+framework   : revealjs       # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
 widgets     : []            # {mathjax, quiz, bootstrap}
