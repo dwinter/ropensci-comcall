@@ -6,70 +6,59 @@
 <!-- Your Slides -->
 <!-- One section is one slide -->
 
-<section class="" id="slide-1">
-  <h2>The NCBI</h2>
-  <p>The NCBI has a lot of data... like a <em>lot</em></p>
-
-<p><img src='http://upload.wikimedia.org/wikipedia/commons/b/bb/NucleotideSequences_86_87.jpeg' width=300px></p>
-
+<section>
+    <!-- This is the first slide -->
+    <h1>My Presentation</h1>
+    <footer>by John Doe</footer>
 </section>
-<section class="" id="slide-2">
-  <h2>The NCBI</h2>
-  <p>The NCBI has a lot of data... like a <em>lot</em></p>
 
-<p><img src="http://upload.wikimedia.org/wikipedia/commons/8/86/Genbank63FloppyDisk.jpg" alt="genbank_35"></p>
-
+<section>
+    <p>Some random text: But I've never been to the moon! You can see how I lived before I met you. Also Zoidberg.
+    I could if you hadn't turned on the light and shut off my stereo.</p>
 </section>
-<section class="" id="slide-3">
-  <h2>The NCBI</h2>
-  <p>The NCBI has a lot of data... like a <em>lot</em></p>
 
-<p><img src="http://upload.wikimedia.org/wikipedia/commons/2/24/Genbank100CD.jpg" alt="genbank_CDROM"></p>
-
-<p>(thanks @yokofakun/wikipedia!)</p>
-
+<section>
+    <h3>An incremental list</h3>
+    <ul class="incremental">
+      <li>Item 1
+      <li>Item 2
+      <li>Item 3
+    </ul>
+    <div role="note">Some notes. They are only visible using onstage shell.</div>
 </section>
-<section class="" id="slide-4">
-  <h2>The NCBI</h2>
-  <p>The NCBI has a lot of data... like a <em>lot</em></p>
 
-<pre><code class="r">load_all(&quot;~/src/rentrez&quot;)
-all_dbs &lt;- entrez_dbs()[-47] #there&#39;s always one...
-how_many_recs &lt;- function(db)  as.integer(entrez_db_summary(db)[&quot;Count&quot;]) 
-nrecs &lt;- sapply(all_dbs, how_many_recs)
-</code></pre>
-
+<section>
+  <blockquote>
+    Who's brave enough to fly into something we all keep calling a death sphere?
+  </blockquote>
+  <details>
+    <p>In the onstage shell, notes scroll rather than overflow:</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac dui eu est feugiat lacinia sit amet nec leo. Mauris eu ipsum leo. Nulla mi odio, cursus sed sollicitudin non, fringilla id magna. Suspendisse sit amet posuere elit. Maecenas iaculis, turpis a placerat imperdiet, libero lorem feugiat nisi, nec tincidunt diam nibh sit amet massa. Vestibulum quis adipiscing tellus. Maecenas sollicitudin sodales pulvinar. Donec dui ipsum, bibendum facilisis consequat interdum, tempus ut mauris. Aliquam ut dolor nec odio scelerisque bibendum quis in neque. Aliquam dui dui, pulvinar quis fermentum quis, gravida eu augue. Nunc tristique dolor a urna pulvinar bibendum. Curabitur mollis cursus neque, in scelerisque metus porta non. Donec tempor enim in nibh vestibulum et convallis nisi malesuada. Duis ut lectus sed metus venenatis porttitor id pharetra quam. Suspendisse sapien turpis, ornare in molestie et, gravida eget turpis.
+    </p>
+  </details>
 </section>
-<section class="" id="slide-5">
-  <h2>The NCBI</h2>
-  <pre><code class="r">dotchart(nrecs)
-</code></pre>
 
-<p><img src="assets/fig/dotchart-1.png" alt="plot of chunk dotchart"> </p>
-
+<section>
+    <h2>Part two</h2>
 </section>
-<section class="" id="slide-6">
-  <h2>The NCBI and entrez</h2>
-  <p><a href="http://www.ncbi.nlm.nih.gov/">Via the web...</a></p>
 
+<section>
+    <figure> <!-- Figures are used to display images and videos fullpage -->
+      <img src="http://placekitten.com/g/800/600">
+      <figcaption>An image</figcaption>
+    </figure>
+    <div role="note">Kittens are so cute!</div>
 </section>
-<section class="" id="slide-7">
-  <h2>The NCBI and entrez</h2>
-  <p><a href="http://www.ncbi.nlm.nih.gov/books/NBK25501/">..or an API</a></p>
 
+<section>
+    <figure> <!-- Videos are automatically played -->
+      <video src="http://videos-cdn.mozilla.net/brand/Mozilla_Firefox_Manifesto_v0.2_640.webm" poster="http://www.mozilla.org/images/about/poster.jpg"></video>
+      <figcaption>A video</figcaption>
+    </figure>
 </section>
-<section class="" id="slide-8">
-  <h2>The NCBI and entrez in R</h2>
-  <ul>
-<li>Lots of use the API for a few cases</li>
-<li><code>genomes</code> package in BioC is pretty complete...</li>
-<li class='..as'>is <code>rentrez</code> which I&#39;m going to talk about</li>
-</ul>
 
-</section>
-<section class="" id="slide-9">
-  <h2>Demo</h2>
-  
+<section>
+    <h2>End!</h2>
 </section>
 
 <!-- Your Style -->
@@ -209,7 +198,7 @@ nrecs &lt;- sapply(all_dbs, how_many_recs)
   }
 </style>
 
-<!--  dzslides core
+<!-- {{{{ dzslides core
 #
 #
 #     __  __  __       .  __   ___  __
@@ -684,4 +673,4 @@ nrecs &lt;- sapply(all_dbs, how_many_recs)
   }
 
 </script>
-<!-- vim: set fdm=marker: -->
+<!-- vim: set fdm=marker: }}} -->

@@ -6,71 +6,7 @@
 <!-- Your Slides -->
 <!-- One section is one slide -->
 
-<section class="" id="slide-1">
-  <h2>The NCBI</h2>
-  <p>The NCBI has a lot of data... like a <em>lot</em></p>
-
-<p><img src='http://upload.wikimedia.org/wikipedia/commons/b/bb/NucleotideSequences_86_87.jpeg' width=300px></p>
-
-</section>
-<section class="" id="slide-2">
-  <h2>The NCBI</h2>
-  <p>The NCBI has a lot of data... like a <em>lot</em></p>
-
-<p><img src="http://upload.wikimedia.org/wikipedia/commons/8/86/Genbank63FloppyDisk.jpg" alt="genbank_35"></p>
-
-</section>
-<section class="" id="slide-3">
-  <h2>The NCBI</h2>
-  <p>The NCBI has a lot of data... like a <em>lot</em></p>
-
-<p><img src="http://upload.wikimedia.org/wikipedia/commons/2/24/Genbank100CD.jpg" alt="genbank_CDROM"></p>
-
-<p>(thanks @yokofakun/wikipedia!)</p>
-
-</section>
-<section class="" id="slide-4">
-  <h2>The NCBI</h2>
-  <p>The NCBI has a lot of data... like a <em>lot</em></p>
-
-<pre><code class="r">load_all(&quot;~/src/rentrez&quot;)
-all_dbs &lt;- entrez_dbs()[-47] #there&#39;s always one...
-how_many_recs &lt;- function(db)  as.integer(entrez_db_summary(db)[&quot;Count&quot;]) 
-nrecs &lt;- sapply(all_dbs, how_many_recs)
-</code></pre>
-
-</section>
-<section class="" id="slide-5">
-  <h2>The NCBI</h2>
-  <pre><code class="r">dotchart(nrecs)
-</code></pre>
-
-<p><img src="assets/fig/dotchart-1.png" alt="plot of chunk dotchart"> </p>
-
-</section>
-<section class="" id="slide-6">
-  <h2>The NCBI and entrez</h2>
-  <p><a href="http://www.ncbi.nlm.nih.gov/">Via the web...</a></p>
-
-</section>
-<section class="" id="slide-7">
-  <h2>The NCBI and entrez</h2>
-  <p><a href="http://www.ncbi.nlm.nih.gov/books/NBK25501/">..or an API</a></p>
-
-</section>
-<section class="" id="slide-8">
-  <h2>The NCBI and entrez in R</h2>
-  <ul>
-<li>Lots of use the API for a few cases</li>
-<li><code>genomes</code> package in BioC is pretty complete...</li>
-<li class='..as'>is <code>rentrez</code> which I&#39;m going to talk about</li>
-</ul>
-
-</section>
-<section class="" id="slide-9">
-  <h2>Demo</h2>
-  
-</section>
+{{{ page.content }}}
 
 <!-- Your Style -->
 <!-- Define the style of your presentation -->
