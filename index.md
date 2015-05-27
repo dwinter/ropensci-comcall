@@ -11,9 +11,12 @@ mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 ---
 
-##Rentrez
-###Getting NCBI data into your R sesssions
+# Rentrez
+### Getting NCBI data into your R sesssions
 David Winter (@theatavism), Arizona State University
+
+--- 
+
 ## The NCBI
 
 The NCBI has a lot of data... like a _lot_
