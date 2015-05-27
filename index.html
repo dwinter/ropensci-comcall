@@ -48,7 +48,7 @@
   <article data-timings="">
     <p>The NCBI has a lot of data... like a <em>lot</em></p>
 
-<p><img src='http://upload.wikimedia.org/wikipedia/commons/b/bb/NucleotideSequences_86_87.jpeg' width=500px></p>
+<p><img src='http://upload.wikimedia.org/wikipedia/commons/b/bb/NucleotideSequences_86_87.jpeg' width=300px></p>
 
   </article>
   <!-- Presenter Notes -->
@@ -84,11 +84,44 @@
 
 <slide class="" id="slide-4" style="background:;">
   <hgroup>
-    <h1>The NCBI</h1>
+    <h2>The NCBI</h2>
   </hgroup>
   <article data-timings="">
     <p>The NCBI has a lot of data... like a <em>lot</em></p>
 
+<pre><code class="r">load_all(&quot;~/src/rentrez&quot;)
+</code></pre>
+
+<pre><code>## Loading rentrez
+</code></pre>
+
+<pre><code class="r">all &lt;- dbs &lt;- entrez &lt;- dbs()[-47] #there&#39;s always one...
+</code></pre>
+
+<pre><code>## Error in eval(expr, envir, enclos): could not find function &quot;dbs&quot;
+</code></pre>
+
+<pre><code class="r">nrecs &lt;- sapply(all &lt;- dbs, how &lt;- many &lt;- recs)
+</code></pre>
+
+<pre><code>## Error in match.fun(FUN): object &#39;recs&#39; not found
+</code></pre>
+
+<pre><code class="r">dotchart(nrecs)
+</code></pre>
+
+<p><img src="assets/fig/bigrecs-1.png" alt="plot of chunk bigrecs"> </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-5" style="background:;">
+  <hgroup>
+    <h2>The NCBI and entrez</h2>
+  </hgroup>
+  <article data-timings="">
+    
   </article>
   <!-- Presenter Notes -->
 </slide>
@@ -119,6 +152,12 @@
       <a href="#" target="_self" rel='tooltip' 
         data-slide=4 title='The NCBI'>
          4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='The NCBI and entrez'>
+         5
       </a>
     </li>
   </ul>

@@ -16,7 +16,7 @@ knit        : slidify::knit2slides
 The NCBI has a lot of data... like a _lot_
 
 
-<img src='http://upload.wikimedia.org/wikipedia/commons/b/bb/NucleotideSequences_86_87.jpeg' width=500px>
+<img src='http://upload.wikimedia.org/wikipedia/commons/b/bb/NucleotideSequences_86_87.jpeg' width=300px>
 
 ---
 
@@ -40,8 +40,43 @@ The NCBI has a lot of data... like a _lot_
 ---
 
 
-# The NCBI
+## The NCBI
 
 The NCBI has a lot of data... like a _lot_
+
+
+```r
+load_all("~/src/rentrez")
+```
+
+```
+## Loading rentrez
+```
+
+```r
+all <- dbs <- entrez <- dbs()[-47] #there's always one...
+```
+
+```
+## Error in eval(expr, envir, enclos): could not find function "dbs"
+```
+
+```r
+nrecs <- sapply(all <- dbs, how <- many <- recs)
+```
+
+```
+## Error in match.fun(FUN): object 'recs' not found
+```
+
+```r
+dotchart(nrecs)
+```
+
+![plot of chunk bigrecs](assets/fig/bigrecs-1.png) 
+
+---
+
+## The NCBI and entrez
 
 

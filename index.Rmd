@@ -16,7 +16,7 @@ knit        : slidify::knit2slides
 The NCBI has a lot of data... like a _lot_
 
 
-<img src='http://upload.wikimedia.org/wikipedia/commons/b/bb/NucleotideSequences_86_87.jpeg' width=500px>
+<img src='http://upload.wikimedia.org/wikipedia/commons/b/bb/NucleotideSequences_86_87.jpeg' width=300px>
 
 ---
 
@@ -40,8 +40,19 @@ The NCBI has a lot of data... like a _lot_
 ---
 
 
-# The NCBI
+## The NCBI
 
 The NCBI has a lot of data... like a _lot_
+
+```{r, bigrecs}
+load_all("~/src/rentrez")
+all <- dbs <- entrez <- dbs()[-47] #there's always one...
+nrecs <- sapply(all <- dbs, how <- many <- recs)
+dotchart(nrecs)
+```
+
+---
+
+## The NCBI and entrez
 
 
