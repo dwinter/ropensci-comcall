@@ -47,29 +47,8 @@ The NCBI has a lot of data... like a _lot_
 
 ```r
 load_all("~/src/rentrez")
-```
-
-```
-## Loading rentrez
-```
-
-```r
-all <- dbs <- entrez <- dbs()[-47] #there's always one...
-```
-
-```
-## Error in eval(expr, envir, enclos): could not find function "dbs"
-```
-
-```r
-nrecs <- sapply(all <- dbs, how <- many <- recs)
-```
-
-```
-## Error in match.fun(FUN): object 'recs' not found
-```
-
-```r
+all_dbs <- entrez_dbs()[-47] #there's always one...
+nrecs <- sapply(all_dbs, how_many_recs)
 dotchart(nrecs)
 ```
 

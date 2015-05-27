@@ -90,24 +90,9 @@
     <p>The NCBI has a lot of data... like a <em>lot</em></p>
 
 <pre><code class="r">load_all(&quot;~/src/rentrez&quot;)
-</code></pre>
-
-<pre><code>## Loading rentrez
-</code></pre>
-
-<pre><code class="r">all &lt;- dbs &lt;- entrez &lt;- dbs()[-47] #there&#39;s always one...
-</code></pre>
-
-<pre><code>## Error in eval(expr, envir, enclos): could not find function &quot;dbs&quot;
-</code></pre>
-
-<pre><code class="r">nrecs &lt;- sapply(all &lt;- dbs, how &lt;- many &lt;- recs)
-</code></pre>
-
-<pre><code>## Error in match.fun(FUN): object &#39;recs&#39; not found
-</code></pre>
-
-<pre><code class="r">dotchart(nrecs)
+all_dbs &lt;- entrez_dbs()[-47] #there&#39;s always one...
+nrecs &lt;- sapply(all_dbs, how_many_recs)
+dotchart(nrecs)
 </code></pre>
 
 <p><img src="assets/fig/bigrecs-1.png" alt="plot of chunk bigrecs"> </p>

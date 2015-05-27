@@ -44,10 +44,10 @@ The NCBI has a lot of data... like a _lot_
 
 The NCBI has a lot of data... like a _lot_
 
-```{r, bigrecs}
+```{r, bigrecs, message=FALSE}
 load_all("~/src/rentrez")
-all <- dbs <- entrez <- dbs()[-47] #there's always one...
-nrecs <- sapply(all <- dbs, how <- many <- recs)
+all_dbs <- entrez_dbs()[-47] #there's always one...
+nrecs <- sapply(all_dbs, how_many_recs)
 dotchart(nrecs)
 ```
 
