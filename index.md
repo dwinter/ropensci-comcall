@@ -15,7 +15,6 @@ knit        : slidify::knit2slides
 
 The NCBI has a lot of data... like a _lot_
 
-###1986
 ![genbank_books](http://upload.wikimedia.org/wikipedia/commons/b/bb/NucleotideSequences_86_87.jpeg)
 
 ---
