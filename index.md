@@ -92,3 +92,19 @@ dotchart(nrecs)
 ---
 
 ## Demo
+
+---
+
+## What's next
+
+[A stable and feature-complete
+release](https://github.com/ropensci/rentrez/milestones)
+
+---
+
+## A little help
+
+[ensembl REST in R](https://github.com/dwinter/rensembl)
+ 
+
+
