@@ -63,4 +63,26 @@ dotchart(nrecs)
 
 ![plot of chunk dotchart](assets/fig/dotchart-1.png) 
 
+---
 
+## The NCBI and entrez
+
+[Via the web...](http://www.ncbi.nlm.nih.gov/)
+
+---
+
+## The NCBI and entrez
+
+[..or an API](http://www.ncbi.nlm.nih.gov/books/NBK25501/)
+
+---
+
+## The NCBI and entrez in R
+
+ * Lots of use the API for a few cases
+ * `genomes` package in BioC is pretty complete...
+ * ...as is `rentrez` which I'm going to talk about
+
+---
+
+## Demo
